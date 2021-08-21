@@ -34,7 +34,7 @@ jobs:
           name: code-coverage-files
           path: coverage    
   
-  Security Testing:
+  Security-Testing:
     runs-on: ubuntu-latest
     needs: code-coverage
     steps:
