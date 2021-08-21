@@ -1,7 +1,7 @@
 name: Nikto 
 on: [push]
 jobs:
-  nmap-scan:
+  nikto-scan:
     runs-on: ubuntu-latest
     #needs: deployment
     steps:
