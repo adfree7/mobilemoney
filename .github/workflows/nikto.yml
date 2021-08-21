@@ -9,9 +9,9 @@ jobs:
         run: sudo apt-get update
       
       - name: Install Nikto
-        run: sudo apt-get install nikto -y
+        run: sudo apt install nikto
       - name: Scan the Domain
-        run: ./nikto.pl -h ${{ secrets.SURGE_DOMAIN }} -Format json -o nikto_scan_report.json
+        run: nikto -h ${{ secrets.SURGE_DOMAIN }} -Format json -o nikto_scan_report.json
     
 
       - name: Upload the Scan Report
